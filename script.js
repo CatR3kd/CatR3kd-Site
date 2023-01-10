@@ -1,7 +1,3 @@
-tippy('#discord', {
-  content: '_Ollie#4505',
-});
-
 function updateInsert(){
   const season = ['Winter', 'Spring', 'Summer', 'Fall'][Math.floor(((new Date()).getMonth() / 12 * 4)) % 4];
   const insert = document.getElementById('insert');

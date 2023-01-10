@@ -14,12 +14,6 @@ html, body {
   transition: 0.5s ease-out all;
 }
 
-#reveal{
-  height: 100%;
-  width: 100%;
-  margin: 0;
-}
-
 #content{
   margin: 30px 0;
   position: absolute;
@@ -66,13 +60,10 @@ a:hover{
   text-decoration: underline;
 }
 
-.smallTitle{
-  text-align: left;
-}
-
 .social{
   border: none;
   background: transparent;
+  margin: 5px;
 }
 
 .social img{
@@ -159,9 +150,10 @@ a:hover{
   html, body{
     overflow-x: hidden;
     overflow-y: scroll;
+    margin-bottom: 5vh;
   }
   
-	#header, #text, .smallTitle{
+	#header, #text{
     text-align: center;
   }
 
@@ -170,12 +162,12 @@ a:hover{
   }
 
   #socials{
-    margin-bottom: 5vh;
+    visibility: hidden;
   }
 }
 
 @media (max-width: 330px) {
-  #content{
+  body{
     margin-top: 25vh;
   }
 }
